@@ -1,0 +1,119 @@
+{
+	"id": "e7a12177-4209-bf20-4ba6-4d170a295519",
+	"name": "VehicleBookingApi",
+	"description": "",
+	"order": [
+		"5b57dfd2-b202-eea6-7301-22f8a8983df0",
+		"3a7f00cc-e822-cada-bcb0-6ed3f9d8574b",
+		"f7b94fe1-7510-3b25-c904-b85bcd62ad9b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1628055766473,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3a7f00cc-e822-cada-bcb0-6ed3f9d8574b",
+			"headers": "Content-Type: application/json\nAuthorization: Token 359b01e41d7eb378962ae43ee9c4aa6e945f77dd\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Token 359b01e41d7eb378962ae43ee9c4aa6e945f77dd",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/bookingApi/availability/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628086489558,
+			"name": "check availabe",
+			"description": "",
+			"collectionId": "e7a12177-4209-bf20-4ba6-4d170a295519",
+			"responses": [],
+			"rawModeData": "{\"username\":\"user1\",\"password\":\"admin@123\"}"
+		},
+		{
+			"id": "5b57dfd2-b202-eea6-7301-22f8a8983df0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/bookingApi/login/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628059713446,
+			"name": "login",
+			"description": "",
+			"collectionId": "e7a12177-4209-bf20-4ba6-4d170a295519",
+			"responses": [],
+			"rawModeData": "{\"username\":\"user1\",\"password\":\"admin@123\"}"
+		},
+		{
+			"id": "f7b94fe1-7510-3b25-c904-b85bcd62ad9b",
+			"headers": "Content-Type: application/json\nAuthorization: Token 359b01e41d7eb378962ae43ee9c4aa6e945f77dd\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Token 359b01e41d7eb378962ae43ee9c4aa6e945f77dd",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/bookingApi/book/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628091746004,
+			"name": "book",
+			"description": "",
+			"collectionId": "e7a12177-4209-bf20-4ba6-4d170a295519",
+			"responses": [],
+			"rawModeData": "{\"datefrom\":\"2021-08-12\",\"dateto\":\"2021-08-13\",\"vehicleRegNumber\":\"KL-01-T-100\"}"
+		}
+	]
+}
